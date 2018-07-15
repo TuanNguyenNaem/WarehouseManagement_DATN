@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8C31D62F-932B-4CAD-A7F8-3D42485ECCD5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WarehouseManagement</RootNamespace>
+    <AssemblyName>WarehouseManagement</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar.Layout, Version=12.8.0.6, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.DotNetBar2, Version=12.8.0.6, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04" />
+    <Reference Include="DevExpress.BonusSkins.v16.1" />
+    <Reference Include="DevExpress.Charts.v16.1.Core, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v16.1" />
+    <Reference Include="DevExpress.DataAccess.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v16.1.Core" />
+    <Reference Include="DevExpress.Utils.v16.1" />
+    <Reference Include="DevExpress.Xpo.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v16.1" />
+    <Reference Include="DevExpress.Sparkline.v16.1.Core" />
+    <Reference Include="DevExpress.XtraCharts.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v16.1.UI, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v16.1.Wizard, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v16.1" />
+    <Reference Include="DevExpress.XtraGrid.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="formAddContractDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formAddContractDetail.Designer.cs">
+      <DependentUpon>formAddContractDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formContract.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formContract.Designer.cs">
+      <DependentUpon>formContract.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formContractToday.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formContractToday.Designer.cs">
+      <DependentUpon>formContractToday.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formEnterWarehouse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formEnterWarehouse.Designer.cs">
+      <DependentUpon>formEnterWarehouse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formEnterWarehouseToday.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formEnterWarehouseToday.Designer.cs">
+      <DependentUpon>formEnterWarehouseToday.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formGiaTriHD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formGiaTriHD.Designer.cs">
+      <DependentUpon>formGiaTriHD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formListSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formListSupplier.Designer.cs">
+      <DependentUpon>formListSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formLogin.Designer.cs">
+      <DependentUpon>formLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formMain.Designer.cs">
+      <DependentUpon>formMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formResetPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formResetPassword.Designer.cs">
+      <DependentUpon>formResetPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formThongKeNhapKho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formThongKeNhapKho.Designer.cs">
+      <DependentUpon>formThongKeNhapKho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formWarehouse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formWarehouse.Designer.cs">
+      <DependentUpon>formWarehouse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="formAddContractDetail.resx">
+      <DependentUpon>formAddContractDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formContract.resx">
+      <DependentUpon>formContract.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formContractToday.resx">
+      <DependentUpon>formContractToday.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formEnterWarehouse.resx">
+      <DependentUpon>formEnterWarehouse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formEnterWarehouseToday.resx">
+      <DependentUpon>formEnterWarehouseToday.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formGiaTriHD.resx">
+      <DependentUpon>formGiaTriHD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formListSupplier.resx">
+      <DependentUpon>formListSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formLogin.resx">
+      <DependentUpon>formLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formMain.resx">
+      <DependentUpon>formMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formResetPassword.resx">
+      <DependentUpon>formResetPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formThongKeNhapKho.resx">
+      <DependentUpon>formThongKeNhapKho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formWarehouse.resx">
+      <DependentUpon>formWarehouse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Decentralization\Decentralization.csproj">
+      <Project>{45340072-8fa0-42af-862a-a8f416243941}</Project>
+      <Name>Decentralization</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Helpers\Helpers.csproj">
+      <Project>{c40b1b13-0c4e-4326-8a02-f7bf0fe16693}</Project>
+      <Name>Helpers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{457cb378-e93c-42f4-9b1e-f6153eab73ca}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Service\Service.csproj">
+      <Project>{7428F90E-D351-4061-A90F-6247EADBE5EF}</Project>
+      <Name>Service</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\modify-key-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DAF-Tipper-Container-Truck-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\House-icon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
